@@ -17,6 +17,7 @@ There are 2 workflows here that will help you speed up the process of generating
 
 1. You will want to configure the size of the window inside the SizeUp application to match the required size of the window. I recommend that you use `1680x1152` or a similar ratio. In step 2, the image will be scaled down to fit properly inside the screenshot template. 
 ![SizeUp configuration](sizeup.png)
+> If you want your screenshots to look as sharp as possible, you should take them at `1060x726`. However, this is not much screen real estate to show off your addon. This is why I recommend that you take larger screenshots that will be scaled down to fit inside the screenshot template later on.
 2.  Drag a project file onto the `1-RW6Screenshots.app` file. You should only do one project file at any one time. 
 3. At this time the RapidWeaver project file will open and be properly size. 
 4. You will then be prompted to take screenshot #1. You should move this dialog box out of the way and prepare the RapidWeaver project file for its first screenshot. 
