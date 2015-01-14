@@ -17,7 +17,9 @@ Copy the workflow file into the /Library/Services folder inside your home folder
 
 The images created are based on the name of the icon that the service processes. So if we take **icon.png** as an example. The service will generate the following icons:
 
-* icon.png (*128px*)
-* icon@2x.png (*256px*)
-* icon@58.png (*58px*)
-* icon@50.png (*50px*)
+```
+icon.png (128px)
+icon@2x.png (256px)
+icon@58.png (58px)
+icon@50.png (50px)
+```
