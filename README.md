@@ -6,3 +6,4 @@ I wrote the following automation tools to help out by speeding up the mundane ta
 * [Adding new addons](addon-form-submit/README.md)
 * [Generating screenshots](screenshots/README.md)
 * [Submitting screenshots](screenshot-form-submit/README.md)
+* [Creating Stacks Icons](stacks-icons/README.md)
