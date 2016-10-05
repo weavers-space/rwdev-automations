@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -150,8 +150,6 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -295,12 +293,10 @@
 						<string>3</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>559.000000:307.000000</string>
+				<string>585.000000:307.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -361,7 +357,7 @@ function main(input, parameters) {
     
     [[NSFileManager defaultManager] createDirectoryAtPath:saveFolder withIntermediateDirectories:true attributes:null error:null];
     
-    var pathToBackground = workingDir+"/RW6ScreenshotTemplate.acorn";
+    var pathToBackground = workingDir+"/RWScreenshotTemplate.acorn";
     var backgroundDocument = Acorn.open(pathToBackground);
         
     var i = 0;
@@ -422,7 +418,7 @@ function main(input, parameters) {
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>559.000000:829.000000</string>
+				<string>585.000000:1036.000000</string>
 				<key>nibPath</key>
 				<string>/Applications/Acorn.app/Contents/Library/Automator/Do JavaScript.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -490,40 +486,38 @@ function main(input, parameters) {
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>26C73629-435A-4F36-B3D7-6F6131F99F37</key>
+		<key>2B4AEA86-E3E5-4879-94C1-11ED91B20E5B</key>
 		<dict>
 			<key>from</key>
-			<string>B0FFF6FC-2E3E-40D0-9D08-3C703596AE41 - B0FFF6FC-2E3E-40D0-9D08-3C703596AE41</string>
+			<string>066FC5CE-FA30-4177-AAA4-F44956489221 - 066FC5CE-FA30-4177-AAA4-F44956489221</string>
 			<key>to</key>
-			<string>0B93FA9D-3253-4455-8A8B-A5A2A78BCC6E - 0B93FA9D-3253-4455-8A8B-A5A2A78BCC6E</string>
+			<string>9369A459-C32C-4350-9F14-809327219E43 - 9369A459-C32C-4350-9F14-809327219E43</string>
 		</dict>
-		<key>42527D6B-E7CD-471D-8025-92F896318E74</key>
+		<key>7E73C496-5374-46BA-A523-9595F5469FDA</key>
 		<dict>
 			<key>from</key>
 			<string>0B93FA9D-3253-4455-8A8B-A5A2A78BCC6E - 0B93FA9D-3253-4455-8A8B-A5A2A78BCC6E</string>
 			<key>to</key>
 			<string>6EA253FF-CE1A-4A1C-83DE-B59563D2C83D - 6EA253FF-CE1A-4A1C-83DE-B59563D2C83D</string>
 		</dict>
-		<key>89649702-C4B3-48CB-ACEC-BA24A643C0ED</key>
+		<key>C2700ECB-E221-428E-AB8B-5DF800D6B363</key>
+		<dict>
+			<key>from</key>
+			<string>B0FFF6FC-2E3E-40D0-9D08-3C703596AE41 - B0FFF6FC-2E3E-40D0-9D08-3C703596AE41</string>
+			<key>to</key>
+			<string>0B93FA9D-3253-4455-8A8B-A5A2A78BCC6E - 0B93FA9D-3253-4455-8A8B-A5A2A78BCC6E</string>
+		</dict>
+		<key>E6178987-C5FA-48D0-B7CF-AA6707217090</key>
 		<dict>
 			<key>from</key>
 			<string>9369A459-C32C-4350-9F14-809327219E43 - 9369A459-C32C-4350-9F14-809327219E43</string>
 			<key>to</key>
 			<string>B0FFF6FC-2E3E-40D0-9D08-3C703596AE41 - B0FFF6FC-2E3E-40D0-9D08-3C703596AE41</string>
-		</dict>
-		<key>8BEE426D-A61A-4BE3-863F-87569BD44EF9</key>
-		<dict>
-			<key>from</key>
-			<string>066FC5CE-FA30-4177-AAA4-F44956489221 - 066FC5CE-FA30-4177-AAA4-F44956489221</string>
-			<key>to</key>
-			<string>9369A459-C32C-4350-9F14-809327219E43 - 9369A459-C32C-4350-9F14-809327219E43</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

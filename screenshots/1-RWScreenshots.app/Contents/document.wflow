@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -49,11 +49,6 @@
 				<string>Get Selected Finder Items</string>
 				<key>ActionParameters</key>
 				<dict/>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.Get_Selected_Finder_Items_2</string>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Get_Selected_Finder_Items_2</string>
 				<key>CFBundleVersion</key>
@@ -82,8 +77,6 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -132,14 +125,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>appPath</key>
-					<string>/Applications/RapidWeaver 6.app</string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>appPath</key>
-					<string>/Applications/RapidWeaver 6.app</string>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.OpenFinderItems</string>
+					<string>/Applications/RapidWeaver 7.app</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.OpenFinderItems</string>
@@ -190,7 +176,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:240.000000</string>
+				<string>530.000000:240.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Open Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -246,8 +232,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>mkdir -p ~/Desktop/RW6-Screenshots
-echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
+					<string>mkdir -p ~/Desktop/RW-Screenshots
+cp ~/Documents/Development/Rapidweaver/rwdev-automations/screenshots/RWScreenshotTemplate.acorn ~/Desktop/RW-Screenshots
+echo $@ | perl -pe 's:.+\/(\S+)\.rw:$1:'</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -256,22 +243,6 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 					<string>/bin/zsh</string>
 					<key>source</key>
 					<string></string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>COMMAND_STRING</key>
-					<string>mkdir -p ~/Desktop/RW6-Screenshots
-echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
-					<key>CheckedForUserDefaultShell</key>
-					<true/>
-					<key>inputMethod</key>
-					<integer>1</integer>
-					<key>shell</key>
-					<string>/bin/zsh</string>
-					<key>source</key>
-					<string></string>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.RunShellScript</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.RunShellScript</string>
@@ -376,7 +347,7 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:423.000000</string>
+				<string>530.000000:423.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -435,13 +406,6 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 					<key>variableUUID</key>
 					<string>781A1E37-F968-4CEE-B346-1969204C458B</string>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.Set_Value_of_Variable</string>
-					<key>variableUUID</key>
-					<string>781A1E37-F968-4CEE-B346-1969204C458B</string>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Set_Value_of_Variable</string>
 				<key>CFBundleVersion</key>
@@ -493,7 +457,7 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:709.000000</string>
+				<string>530.000000:529.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -544,13 +508,6 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 					<key>appPath</key>
 					<string>/Applications/SizeUp.app</string>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>appPath</key>
-					<string>/Applications/SizeUp.app</string>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.OpenApplication</string>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.OpenApplication</string>
 				<key>CFBundleVersion</key>
@@ -599,7 +556,7 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:812.000000</string>
+				<string>530.000000:632.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Launch Application.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -647,14 +604,7 @@ echo $@ | perl -pe 's:.+\/(\S+)\.rw6:$1:'</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "SizeUp"	do action Centerend tell</string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "SizeUp"	do action Centerend tell</string>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.RunScript</string>
+					<string>tell application "RapidWeaver 7" to activatetell application "SizeUp"	do action Centerend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -708,7 +658,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:1058.000000</string>
+				<string>530.000000:878.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -778,24 +728,6 @@ Click “Continue” when you are ready.</string>
 					<key>questionText</key>
 					<string>Take Screenshot #1 (Edit Mode)</string>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>affirmativeTitle</key>
-					<string>Continue</string>
-					<key>displayWarning</key>
-					<false/>
-					<key>explanationText</key>
-					<string>1. Collapse default stack settings. 
-2. Make sure that the stack settings are showing. 
-
-Click “Continue” when you are ready.</string>
-					<key>negativeTitle</key>
-					<string>Cancel</string>
-					<key>questionText</key>
-					<string>Take Screenshot #1 (Edit Mode)</string>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.Ask for Confirmation</string>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Ask for Confirmation</string>
 				<key>CFBundleVersion</key>
@@ -810,6 +742,8 @@ Click “Continue” when you are ready.</string>
 				</array>
 				<key>Class Name</key>
 				<string>AMAskForConfirmationAction</string>
+				<key>IgnoresInput</key>
+				<false/>
 				<key>InputUUID</key>
 				<string>CB160974-F04F-47EB-8D3B-5778DC53EAA1</string>
 				<key>Keywords</key>
@@ -899,7 +833,7 @@ Click “Continue” when you are ready.</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:1255.000000</string>
+				<string>530.000000:1075.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -947,14 +881,7 @@ Click “Continue” when you are ready.</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "SizeUp"	do action Centerend tell</string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "SizeUp"	do action Centerend tell</string>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.RunScript</string>
+					<string>tell application "RapidWeaver 7" to activatetell application "SizeUp"	do action Centerend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -1008,7 +935,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:1681.000000</string>
+				<string>530.000000:1321.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1051,11 +978,9 @@ end run</string>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.string</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -1068,13 +993,6 @@ end run</string>
 				<dict>
 					<key>variableUUID</key>
 					<string>781A1E37-F968-4CEE-B346-1969204C458B</string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>temporary items path</key>
-					<string>/var/folders/ky/9c92pqyd56lfd7k5fn3njqj80000gn/T/9E8E1627-14DC-4403-8BDE-7B50CB9D1F7C/1/com.apple.Automator.Get_Value_of_Variable</string>
-					<key>variableUUID</key>
-					<string>Fancy-Image-Caption</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Get_Value_of_Variable</string>
@@ -1127,7 +1045,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:1964.000000</string>
+				<string>530.000000:1424.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1183,7 +1101,7 @@ end run</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>screencapture -iW ~/Desktop/RW6-Screenshots/$@-1.png
+					<string>screencapture -iW ~/Desktop/RW-Screenshots/$@-1.png
 </string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -1297,7 +1215,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:2147.000000</string>
+				<string>530.000000:1607.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1469,7 +1387,7 @@ Click “Continue” when you are ready.</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:2344.000000</string>
+				<string>530.000000:1804.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1517,7 +1435,7 @@ Click “Continue” when you are ready.</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "SizeUp"	do action Centerend tell</string>
+					<string>tell application "RapidWeaver 7" to activatetell application "SizeUp"	do action Centerend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -1571,7 +1489,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:2590.000000</string>
+				<string>530.000000:2050.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1681,7 +1599,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:2693.000000</string>
+				<string>530.000000:2153.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1737,7 +1655,7 @@ end run</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>screencapture -iW ~/Desktop/RW6-Screenshots/$@-2.png
+					<string>screencapture -iW ~/Desktop/RW-Screenshots/$@-2.png
 </string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -1851,7 +1769,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:2876.000000</string>
+				<string>530.000000:2336.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2023,7 +1941,7 @@ Click “Continue” when you are ready.</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:3073.000000</string>
+				<string>530.000000:2533.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2071,7 +1989,7 @@ Click “Continue” when you are ready.</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "SizeUp"	do action Centerend tell</string>
+					<string>tell application "RapidWeaver 7" to activatetell application "SizeUp"	do action Centerend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -2125,7 +2043,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:3319.000000</string>
+				<string>530.000000:2779.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2235,7 +2153,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:3422.000000</string>
+				<string>530.000000:2882.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2291,7 +2209,7 @@ end run</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>screencapture -iW ~/Desktop/RW6-Screenshots/$@-3.png
+					<string>screencapture -iW ~/Desktop/RW-Screenshots/$@-3.png
 </string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -2405,7 +2323,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:3605.000000</string>
+				<string>530.000000:3065.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2453,7 +2371,7 @@ end run</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "RapidWeaver 6" to activatetell application "System Events" to keystroke "w" using command down</string>
+					<string>tell application "RapidWeaver 7" to activatetell application "System Events" to keystroke "w" using command down</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -2507,7 +2425,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:3851.000000</string>
+				<string>530.000000:3311.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2517,131 +2435,131 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>00FF2C95-2AFF-4D03-B6CA-5DF28A635201</key>
-		<dict>
-			<key>from</key>
-			<string>14DFF56A-DFCC-43F3-8A79-874EEA68714C - 14DFF56A-DFCC-43F3-8A79-874EEA68714C</string>
-			<key>to</key>
-			<string>9AF9290D-99A1-4285-9464-9CAC3CFB95C1 - 9AF9290D-99A1-4285-9464-9CAC3CFB95C1</string>
-		</dict>
-		<key>0490080A-BD40-42B7-8123-5C11862BAE47</key>
+		<key>14126F19-3DB4-4CA9-BE08-053303DE4C85</key>
 		<dict>
 			<key>from</key>
 			<string>64762500-E155-4DF0-9A37-F5F6EB7F2CA0 - 64762500-E155-4DF0-9A37-F5F6EB7F2CA0</string>
 			<key>to</key>
 			<string>31FAE1D8-1FA0-4486-B16B-E501DC461A1D - 31FAE1D8-1FA0-4486-B16B-E501DC461A1D</string>
 		</dict>
-		<key>14E39ADE-6C15-49D6-A87E-34C58B8A96C7</key>
+		<key>1E6B0CB8-6935-462C-8844-19F35F9FF565</key>
 		<dict>
 			<key>from</key>
-			<string>581573F4-69A1-4C54-BE50-FC8C4F9C0210 - 581573F4-69A1-4C54-BE50-FC8C4F9C0210</string>
-			<key>to</key>
-			<string>D1EF73FE-3826-452D-A66E-F2A1B3A847BA - D1EF73FE-3826-452D-A66E-F2A1B3A847BA</string>
-		</dict>
-		<key>29F6E523-5721-4482-8BBA-2C1E17CC97AC</key>
-		<dict>
-			<key>from</key>
-			<string>D1EF73FE-3826-452D-A66E-F2A1B3A847BA - D1EF73FE-3826-452D-A66E-F2A1B3A847BA</string>
-			<key>to</key>
-			<string>E183DEFD-2E39-4B25-BF0E-780F10839E04 - E183DEFD-2E39-4B25-BF0E-780F10839E04</string>
-		</dict>
-		<key>369ED62E-181C-4C66-8EDA-8381CF7359AE</key>
-		<dict>
-			<key>from</key>
-			<string>1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA - 1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA</string>
-			<key>to</key>
-			<string>2BD36D6C-D750-4061-865A-61ABA593C4A9 - 2BD36D6C-D750-4061-865A-61ABA593C4A9</string>
-		</dict>
-		<key>3D4D1A0A-CDD8-4F38-9588-D54DA74F045F</key>
-		<dict>
-			<key>from</key>
-			<string>08EBBEEB-C0D2-4A70-BA39-09D340AE6D1B - 08EBBEEB-C0D2-4A70-BA39-09D340AE6D1B</string>
-			<key>to</key>
 			<string>D3AE5466-B18B-4994-9112-DCA8A2C251B7 - D3AE5466-B18B-4994-9112-DCA8A2C251B7</string>
+			<key>to</key>
+			<string>581573F4-69A1-4C54-BE50-FC8C4F9C0210 - 581573F4-69A1-4C54-BE50-FC8C4F9C0210</string>
 		</dict>
-		<key>4D1F1264-A2EB-4FBF-B3DD-2565E218D3F2</key>
+		<key>2E5AD911-50D1-4668-A791-ECACCED6B5BE</key>
 		<dict>
 			<key>from</key>
-			<string>983D45ED-2F21-4C6A-97FE-906A3D6C2B5E - 983D45ED-2F21-4C6A-97FE-906A3D6C2B5E</string>
+			<string>46539E03-A5E6-4A82-9FF8-42F72B946764 - 46539E03-A5E6-4A82-9FF8-42F72B946764</string>
 			<key>to</key>
-			<string>12D7B16C-8033-4133-82F0-FC0B50AC2323 - 12D7B16C-8033-4133-82F0-FC0B50AC2323</string>
+			<string>5977EB0F-7ACA-4E5C-924D-4A6B2A39389D - 5977EB0F-7ACA-4E5C-924D-4A6B2A39389D</string>
 		</dict>
-		<key>55C3FBA5-6948-4F96-93D7-6E81AD8D3FFC</key>
+		<key>3BA9EB50-4031-4C0A-82B7-62CCA682F979</key>
 		<dict>
 			<key>from</key>
 			<string>3B2167D7-43D0-488D-9A00-9D302BB5AA46 - 3B2167D7-43D0-488D-9A00-9D302BB5AA46</string>
 			<key>to</key>
 			<string>08EBBEEB-C0D2-4A70-BA39-09D340AE6D1B - 08EBBEEB-C0D2-4A70-BA39-09D340AE6D1B</string>
 		</dict>
-		<key>5CC1E78A-AD7C-4A3F-807D-FF60DE253A92</key>
+		<key>45A2A01E-8355-49F0-9AF9-40D92D661DD7</key>
+		<dict>
+			<key>from</key>
+			<string>E183DEFD-2E39-4B25-BF0E-780F10839E04 - E183DEFD-2E39-4B25-BF0E-780F10839E04</string>
+			<key>to</key>
+			<string>1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA - 1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA</string>
+		</dict>
+		<key>60DE17FB-D744-446B-B0BA-3BCAD68F32E5</key>
+		<dict>
+			<key>from</key>
+			<string>1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA - 1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA</string>
+			<key>to</key>
+			<string>2BD36D6C-D750-4061-865A-61ABA593C4A9 - 2BD36D6C-D750-4061-865A-61ABA593C4A9</string>
+		</dict>
+		<key>62EF4F48-8377-4A80-AB33-1415F53DF70F</key>
+		<dict>
+			<key>from</key>
+			<string>14DFF56A-DFCC-43F3-8A79-874EEA68714C - 14DFF56A-DFCC-43F3-8A79-874EEA68714C</string>
+			<key>to</key>
+			<string>9AF9290D-99A1-4285-9464-9CAC3CFB95C1 - 9AF9290D-99A1-4285-9464-9CAC3CFB95C1</string>
+		</dict>
+		<key>8ACB7AB3-636A-4B8F-BA09-40D4C5CDB6EF</key>
+		<dict>
+			<key>from</key>
+			<string>31FAE1D8-1FA0-4486-B16B-E501DC461A1D - 31FAE1D8-1FA0-4486-B16B-E501DC461A1D</string>
+			<key>to</key>
+			<string>3B2167D7-43D0-488D-9A00-9D302BB5AA46 - 3B2167D7-43D0-488D-9A00-9D302BB5AA46</string>
+		</dict>
+		<key>98755250-0761-4B89-A05F-AB181E6088AA</key>
 		<dict>
 			<key>from</key>
 			<string>9AEEBE15-D95E-4BE2-AE1A-0EAD82CCBEA1 - 9AEEBE15-D95E-4BE2-AE1A-0EAD82CCBEA1</string>
 			<key>to</key>
 			<string>64762500-E155-4DF0-9A37-F5F6EB7F2CA0 - 64762500-E155-4DF0-9A37-F5F6EB7F2CA0</string>
 		</dict>
-		<key>72C8221B-2E63-4C66-9CCA-841C3794D6F8</key>
+		<key>A04D7A14-AFF5-4097-B1A8-C707CD24EDAB</key>
 		<dict>
 			<key>from</key>
-			<string>ED7D0D19-E734-4A6D-8C76-4831AD1B6A5E - ED7D0D19-E734-4A6D-8C76-4831AD1B6A5E</string>
+			<string>983D45ED-2F21-4C6A-97FE-906A3D6C2B5E - 983D45ED-2F21-4C6A-97FE-906A3D6C2B5E</string>
 			<key>to</key>
-			<string>46539E03-A5E6-4A82-9FF8-42F72B946764 - 46539E03-A5E6-4A82-9FF8-42F72B946764</string>
+			<string>12D7B16C-8033-4133-82F0-FC0B50AC2323 - 12D7B16C-8033-4133-82F0-FC0B50AC2323</string>
 		</dict>
-		<key>8221705F-23CD-4024-AEE7-7BD51F8E55D1</key>
+		<key>A70D9DF9-36D4-4E57-B45D-51A3F090A44B</key>
 		<dict>
 			<key>from</key>
-			<string>31FAE1D8-1FA0-4486-B16B-E501DC461A1D - 31FAE1D8-1FA0-4486-B16B-E501DC461A1D</string>
+			<string>581573F4-69A1-4C54-BE50-FC8C4F9C0210 - 581573F4-69A1-4C54-BE50-FC8C4F9C0210</string>
 			<key>to</key>
-			<string>3B2167D7-43D0-488D-9A00-9D302BB5AA46 - 3B2167D7-43D0-488D-9A00-9D302BB5AA46</string>
+			<string>D1EF73FE-3826-452D-A66E-F2A1B3A847BA - D1EF73FE-3826-452D-A66E-F2A1B3A847BA</string>
 		</dict>
-		<key>830A237C-0A5B-4C3C-B195-0A6945368A62</key>
-		<dict>
-			<key>from</key>
-			<string>83926AF3-8361-45A6-846C-3245CECF72FA - 83926AF3-8361-45A6-846C-3245CECF72FA</string>
-			<key>to</key>
-			<string>14DFF56A-DFCC-43F3-8A79-874EEA68714C - 14DFF56A-DFCC-43F3-8A79-874EEA68714C</string>
-		</dict>
-		<key>AEF202DC-8F4B-4F4B-B4FB-6F0545DD1949</key>
+		<key>B8354F8F-901C-4282-A66E-CA75D5625D17</key>
 		<dict>
 			<key>from</key>
 			<string>5977EB0F-7ACA-4E5C-924D-4A6B2A39389D - 5977EB0F-7ACA-4E5C-924D-4A6B2A39389D</string>
 			<key>to</key>
 			<string>983D45ED-2F21-4C6A-97FE-906A3D6C2B5E - 983D45ED-2F21-4C6A-97FE-906A3D6C2B5E</string>
 		</dict>
-		<key>B199D8BD-F10B-42EC-9EBD-DFAC6DBE98DA</key>
-		<dict>
-			<key>from</key>
-			<string>E183DEFD-2E39-4B25-BF0E-780F10839E04 - E183DEFD-2E39-4B25-BF0E-780F10839E04</string>
-			<key>to</key>
-			<string>1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA - 1F93DEC6-55EA-4733-9ADB-0C2DF21A3BFA</string>
-		</dict>
-		<key>B59B1C2F-47EE-4611-B363-F5C7F7F4D96C</key>
+		<key>C9166787-4C12-45AF-9CB7-766F756FB4D1</key>
 		<dict>
 			<key>from</key>
 			<string>9AF9290D-99A1-4285-9464-9CAC3CFB95C1 - 9AF9290D-99A1-4285-9464-9CAC3CFB95C1</string>
 			<key>to</key>
 			<string>ED7D0D19-E734-4A6D-8C76-4831AD1B6A5E - ED7D0D19-E734-4A6D-8C76-4831AD1B6A5E</string>
 		</dict>
-		<key>BC1AFF9D-C29E-426C-AC5D-F56D740665F7</key>
+		<key>D8506E2D-852D-49D5-BFC4-02EB3DFFB9A1</key>
 		<dict>
 			<key>from</key>
-			<string>D3AE5466-B18B-4994-9112-DCA8A2C251B7 - D3AE5466-B18B-4994-9112-DCA8A2C251B7</string>
+			<string>83926AF3-8361-45A6-846C-3245CECF72FA - 83926AF3-8361-45A6-846C-3245CECF72FA</string>
 			<key>to</key>
-			<string>581573F4-69A1-4C54-BE50-FC8C4F9C0210 - 581573F4-69A1-4C54-BE50-FC8C4F9C0210</string>
+			<string>14DFF56A-DFCC-43F3-8A79-874EEA68714C - 14DFF56A-DFCC-43F3-8A79-874EEA68714C</string>
 		</dict>
-		<key>CE3BE6D4-7A34-4B18-BDD5-0C6809F11463</key>
+		<key>DA345A5A-F70B-4D7A-9945-A326F35CB93D</key>
+		<dict>
+			<key>from</key>
+			<string>D1EF73FE-3826-452D-A66E-F2A1B3A847BA - D1EF73FE-3826-452D-A66E-F2A1B3A847BA</string>
+			<key>to</key>
+			<string>E183DEFD-2E39-4B25-BF0E-780F10839E04 - E183DEFD-2E39-4B25-BF0E-780F10839E04</string>
+		</dict>
+		<key>E71F2A78-FE41-4E3A-87DF-4B843DFDCA5E</key>
+		<dict>
+			<key>from</key>
+			<string>08EBBEEB-C0D2-4A70-BA39-09D340AE6D1B - 08EBBEEB-C0D2-4A70-BA39-09D340AE6D1B</string>
+			<key>to</key>
+			<string>D3AE5466-B18B-4994-9112-DCA8A2C251B7 - D3AE5466-B18B-4994-9112-DCA8A2C251B7</string>
+		</dict>
+		<key>EA1A0F07-C984-4C29-9175-90CC7CAB4834</key>
+		<dict>
+			<key>from</key>
+			<string>ED7D0D19-E734-4A6D-8C76-4831AD1B6A5E - ED7D0D19-E734-4A6D-8C76-4831AD1B6A5E</string>
+			<key>to</key>
+			<string>46539E03-A5E6-4A82-9FF8-42F72B946764 - 46539E03-A5E6-4A82-9FF8-42F72B946764</string>
+		</dict>
+		<key>F277CEDB-8846-4BA5-B960-AA028A07E48E</key>
 		<dict>
 			<key>from</key>
 			<string>2BD36D6C-D750-4061-865A-61ABA593C4A9 - 2BD36D6C-D750-4061-865A-61ABA593C4A9</string>
 			<key>to</key>
 			<string>83926AF3-8361-45A6-846C-3245CECF72FA - 83926AF3-8361-45A6-846C-3245CECF72FA</string>
-		</dict>
-		<key>ECB2F38C-77E9-4B69-B47C-221198CB669D</key>
-		<dict>
-			<key>from</key>
-			<string>46539E03-A5E6-4A82-9FF8-42F72B946764 - 46539E03-A5E6-4A82-9FF8-42F72B946764</string>
-			<key>to</key>
-			<string>5977EB0F-7ACA-4E5C-924D-4A6B2A39389D - 5977EB0F-7ACA-4E5C-924D-4A6B2A39389D</string>
 		</dict>
 	</dict>
 	<key>variables</key>
